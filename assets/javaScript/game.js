@@ -3,17 +3,7 @@ var counter = 0;
 var wins = 0;
 var losses = 0;
 
-function reset() {
-    counter = 0;
-    var targetScore = Math.floor(Math.random() * 100) + 1;
-    $("#targetscore").text(targetScore);
-    for (var j = 0; j < crystalNumbers.length; j++) {
-        var crystalRandomNumber = crystalNumbers[Math.floor(Math.random() * crystalNumbers.length)];
-        $(".img-class").attr("crystal-data", crystalRandomNumber);
-    }
 
-
-}
 
 
 $(document).ready(function() {
